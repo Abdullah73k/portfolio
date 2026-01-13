@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { WarpBackground } from "@/components/ui/warp-background";
-import { ScrollProgress } from "@/components/ui/scroll-progress";
 
 const jetbrainsMono = JetBrains_Mono({
 	subsets: ["latin"],
@@ -34,7 +33,6 @@ export default function RootLayout({
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased relative min-h-screen`}
 			>
-				<ScrollProgress />
 				<WarpBackground
 					className="min-h-screen w-full"
 					beamsPerSide={4}
