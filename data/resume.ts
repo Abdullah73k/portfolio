@@ -21,7 +21,7 @@ export const resumeData = {
 			"Computer Architecture",
 			"Concurrent Systems",
 			"Scientific Computing",
-			"Intro to Machine Learning and Neural Networks",
+			"Intro to ML and Neural Networks",
 		],
 		onlineCourses: [
 			"Full-Stack Development",
