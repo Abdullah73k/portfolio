@@ -68,7 +68,7 @@ export const resumeData = {
 
 	projects: [
 		{
-			name: "Property Management",
+			name: "Rentra",
 			description:
 				"A full-stack property management system designed for small to mid-sized landlords, providing centralized tracking of properties, leases, tenants, and financials.",
 			techStack: [
@@ -77,16 +77,18 @@ export const resumeData = {
 				"Node.js",
 				"Express",
 				"PostgreSQL",
+				"Supabase",
 				"Docker",
 				"Doppler",
 				"Better Auth",
 			],
-			sourceCode: "https://github.com/Abdullah73k/Property-Management",
+			sourceCode: "https://github.com/Abdullah73k/Rentra",
 			website: "https://property-management-beige.vercel.app",
 			highlights: [
 				"Architected and deployed a full-stack web platform with mobile support (iOS & Android)",
 				"Containerized backend services with Docker and deployed on Render",
 				"Managed secrets and environment variables using Doppler",
+				"Integrated Supabase Storage with private buckets and time-limited signed URLs to securely store and serve uploaded documents",
 				"Implemented backend authentication middleware with Better Auth to enforce session-based authorization",
 			],
 		},
