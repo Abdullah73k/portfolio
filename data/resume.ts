@@ -38,9 +38,9 @@ export const resumeData = {
 			location: "Ontario, Canada",
 			startDate: "July 2025",
 			endDate: "September 2025",
-			logo: "/logos/kajoo-ai.png",
+			logo: "/kajoo.png",
 			description:
-				"Built a production-ready browser extension enabling design extraction and webpage analysis.",
+				"Built a  cross-browser compatible extension enabling design extraction and webpage analysis.",
 			highlights: [
 				"Developed a cross-browser extension using React, TypeScript, Tailwind CSS, and WXT",
 				"Integrated Chrome DevTools Protocol to programmatically inspect and capture webpage designs",
@@ -54,7 +54,7 @@ export const resumeData = {
 			location: "Abu Dhabi, UAE",
 			startDate: "May 2025",
 			endDate: "June 2025",
-			logo: "/logos/ethara.png",
+			logo: "/ethara.png",
 			description:
 				"Worked on large-scale event booking and management systems for global sporting events.",
 			highlights: [

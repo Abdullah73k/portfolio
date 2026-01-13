@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
 import { HugeiconsIcon } from "@hugeicons/react"
+import Image from "next/image"
 import {
   MailIcon,
   SmartPhone01Icon,
@@ -66,13 +67,25 @@ export function Resume() {
           {workExperience.map((job, index) => (
             <article key={index} className="group">
               <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
-                <div>
-                  <h3 className="text-foreground text-sm font-medium">
-                    {job.role}
-                  </h3>
-                  <p className="text-muted-foreground text-xs">
-                    {job.company} · {job.location}
-                  </p>
+                <div className="flex items-center gap-3">
+                  {job.logo && (
+                    <div className="relative h-10 w-10 shrink-0">
+                      <Image
+                        src={job.logo}
+                        alt={`${job.company} logo`}
+                        fill
+                        className="rounded-md object-contain"
+                      />
+                    </div>
+                  )}
+                  <div>
+                    <h3 className="text-foreground text-sm font-medium">
+                      {job.role}
+                    </h3>
+                    <p className="text-muted-foreground text-xs">
+                      {job.company} · {job.location}
+                    </p>
+                  </div>
                 </div>
                 <p className="text-muted-foreground text-xs">
                   {job.startDate} – {job.endDate}
