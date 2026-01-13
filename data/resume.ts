@@ -1,0 +1,154 @@
+export const resumeData = {
+	personal: {
+		name: "Abdullah Khamis",
+		email: "abdullahbkhamis@gmail.com",
+		phone: "905-302-0111",
+		linkedin: "https://www.linkedin.com/in/abdullah-khamis1/",
+		github: "https://github.com/Abdullah73k",
+		portfolio: "https://abdullah-khamis-portfolio.vercel.app",
+		location: "Ontario, Canada",
+	},
+
+	education: {
+		institution: "McMaster University",
+		degree: "Bachelor of Computer Science",
+		location: "Hamilton, Ontario",
+		graduation: "May 2028",
+		coursework: [
+			"Intro to Software Engineering",
+			"Data Structures and Algorithms",
+			"Algorithms and Software Design",
+			"Computer Architecture",
+			"Concurrent Systems",
+			"Scientific Computing",
+			"Intro to Machine Learning and Neural Networks",
+		],
+		onlineCourses: [
+			"Full-Stack Development",
+			"Docker and Kubernetes",
+			"Git and GitHub",
+			"LLM Engineering",
+		],
+	},
+
+	workExperience: [
+		{
+			company: "Kajoo AI",
+			role: "Software Engineering Intern",
+			location: "Ontario, Canada",
+			startDate: "July 2025",
+			endDate: "September 2025",
+			logo: "/logos/kajoo-ai.png",
+			description:
+				"Built a production-ready browser extension enabling design extraction and webpage analysis.",
+			highlights: [
+				"Developed a cross-browser extension using React, TypeScript, Tailwind CSS, and WXT",
+				"Integrated Chrome DevTools Protocol to programmatically inspect and capture webpage designs",
+				"Implemented full-page and element-level style extraction to improve accuracy and usability",
+				"Built responsive breakpoint detection to support multi-device design capture",
+			],
+		},
+		{
+			company: "ETHARA",
+			role: "Software Engineer Intern",
+			location: "Abu Dhabi, UAE",
+			startDate: "May 2025",
+			endDate: "June 2025",
+			logo: "/logos/ethara.png",
+			description:
+				"Worked on large-scale event booking and management systems for global sporting events.",
+			highlights: [
+				"Developed a full-stack event booking system for the Abu Dhabi F1 Grand Prix",
+				"Built customer and admin dashboards for event registration and management",
+				"Implemented white-labeled event experiences for sponsored partners",
+				"Worked with TypeScript, Node.js, Express, React, and PostgreSQL",
+			],
+		},
+	],
+
+	projects: [
+		{
+			name: "Property Management Platform",
+			description:
+				"A full-stack property management system designed for small to mid-sized landlords, providing centralized tracking of properties, leases, tenants, and financials.",
+			techStack: [
+				"React",
+				"TypeScript",
+				"Node.js",
+				"Express",
+				"PostgreSQL",
+				"Docker",
+				"Doppler",
+				"Better Auth",
+			],
+			sourceCode: "https://github.com/Abdullah73k",
+			website: null,
+			highlights: [
+				"Architected and deployed a full-stack web platform with mobile support (iOS & Android)",
+				"Containerized backend services with Docker and deployed on Render",
+				"Managed secrets and environment variables using Doppler",
+				"Implemented backend authentication middleware with Better Auth to enforce session-based authorization",
+			],
+		},
+		{
+			name: "NeuraLearn",
+			description:
+				"A voice-first AI learning platform built in 24 hours at DeltaHacks XII, enabling hands-free, accessible learning through an infinite-canvas mind map interface.",
+			techStack: [
+				"Next.js",
+				"React Flow",
+				"MongoDB",
+				"Vercel AI SDK",
+				"Gemini 2.0 Flash",
+				"Google Embeddings",
+				"Vultr",
+				"Nginx",
+				"PM2",
+			],
+			sourceCode: "https://github.com/Abdullah73k",
+			website: null,
+			highlights: [
+				"Winner of the 'Best Use of Vultr' award at DeltaHacks XII",
+				"Replaced linear chat with an infinite-canvas mind map for improved knowledge exploration",
+				"Contributed to semantic routing using vector embeddings and cosine similarity",
+				"Deployed production infrastructure on Vultr with Nginx reverse proxy and PM2",
+			],
+		},
+	],
+
+	technicalSkills: {
+		languages: [
+			"Python",
+			"SQL",
+			"NoSQL",
+			"JavaScript",
+			"TypeScript",
+			"HTML",
+			"CSS",
+		],
+		frameworks: [
+			"React",
+			"Next.js",
+			"Node.js",
+			"Express",
+			"PostgreSQL",
+			"MongoDB",
+			"Drizzle",
+			"Tailwind CSS",
+		],
+		tools: [
+			"Git",
+			"GitHub",
+			"Docker",
+			"Docker Compose",
+			"Linux",
+			"Bash",
+			"Postman",
+			"Jira",
+			"Vercel",
+			"Copilot",
+			"Antigravity",
+			"AI SDK",
+		],
+	},
+};
