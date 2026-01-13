@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import { WarpBackground } from "@/components/ui/warp-background";
+import { DesktopBackground } from "@/components/desktop-background";
 
 const jetbrainsMono = JetBrains_Mono({
 	subsets: ["latin"],
@@ -33,15 +33,9 @@ export default function RootLayout({
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased relative min-h-screen`}
 			>
-				<WarpBackground
-					className="min-h-screen w-full"
-					beamsPerSide={4}
-					beamSize={3}
-					beamDelayMax={3}
-					gridColor="hsl(var(--border))"
-				>
+				<DesktopBackground>
 					{children}
-				</WarpBackground>
+				</DesktopBackground>
 			</body>
 		</html>
 	);

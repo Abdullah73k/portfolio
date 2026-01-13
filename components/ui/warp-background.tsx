@@ -1,6 +1,6 @@
 "use client"
 
-import React, { HTMLAttributes, useCallback, useMemo } from "react"
+import React, { HTMLAttributes, useCallback, useMemo, useState } from "react"
 import { motion } from "motion/react"
 
 import { cn } from "@/lib/utils"
@@ -27,8 +27,11 @@ const Beam = ({
   delay: number
   duration: number
 }) => {
-  const hue = Math.floor(Math.random() * 360)
-  const ar = Math.floor(Math.random() * 10) + 1
+  // Use state to generate random values client-side only to avoid hydration mismatch
+  const [randomValues] = useState(() => ({
+    hue: Math.floor(Math.random() * 360),
+    ar: Math.floor(Math.random() * 10) + 1,
+  }))
 
   return (
     <motion.div
@@ -36,8 +39,8 @@ const Beam = ({
         {
           "--x": `${x}`,
           "--width": `${width}`,
-          "--aspect-ratio": `${ar}`,
-          "--background": `linear-gradient(hsl(${hue} 80% 60%), transparent)`,
+          "--aspect-ratio": `${randomValues.ar}`,
+          "--background": `linear-gradient(hsl(${randomValues.hue} 80% 60%), transparent)`,
         } as React.CSSProperties
       }
       className={`absolute top-0 left-[var(--x)] [aspect-ratio:1/var(--aspect-ratio)] [width:var(--width)] [background:var(--background)]`}
