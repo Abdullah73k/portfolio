@@ -1,5 +1,5 @@
-import { ComponentExample } from "@/components/component-example";
+import { Resume } from "@/components/resume"
 
 export default function Page() {
-return <ComponentExample />;
+  return <Resume />
 }

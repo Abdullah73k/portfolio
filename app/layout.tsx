@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import { FlickeringGrid } from "@/components/ui/flickering-grid";
+import { WarpBackground } from "@/components/ui/warp-background";
+import { ScrollProgress } from "@/components/ui/scroll-progress";
 
 const jetbrainsMono = JetBrains_Mono({
 	subsets: ["latin"],
@@ -33,21 +34,16 @@ export default function RootLayout({
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased relative min-h-screen`}
 			>
-				{/* Flickering Grid Background */}
-				<div className="fixed inset-0 z-0 overflow-hidden">
-					<FlickeringGrid
-						className="w-full h-full"
-						squareSize={4}
-						gridGap={6}
-						color="#6B7280"
-						maxOpacity={0.5}
-						flickerChance={0.1}
-					/>
-				</div>
-				{/* Content */}
-				<div className="relative z-10">
+				<ScrollProgress />
+				<WarpBackground
+					className="min-h-screen w-full"
+					beamsPerSide={4}
+					beamSize={3}
+					beamDelayMax={3}
+					gridColor="hsl(var(--border))"
+				>
 					{children}
-				</div>
+				</WarpBackground>
 			</body>
 		</html>
 	);
