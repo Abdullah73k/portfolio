@@ -68,6 +68,53 @@ export const resumeData = {
 
 	projects: [
 		{
+			name: "Property Management",
+			description:
+				"A full-stack property management system designed for small to mid-sized landlords, providing centralized tracking of properties, leases, tenants, and financials.",
+			techStack: [
+				"React",
+				"TypeScript",
+				"Node.js",
+				"Express",
+				"PostgreSQL",
+				"Docker",
+				"Doppler",
+				"Better Auth",
+			],
+			sourceCode: "https://github.com/Abdullah73k/Property-Management",
+			website: "https://property-management-beige.vercel.app",
+			highlights: [
+				"Architected and deployed a full-stack web platform with mobile support (iOS & Android)",
+				"Containerized backend services with Docker and deployed on Render",
+				"Managed secrets and environment variables using Doppler",
+				"Implemented backend authentication middleware with Better Auth to enforce session-based authorization",
+			],
+		},
+		{
+			name: "NeuraLearn",
+			description:
+				"A voice-first AI learning platform built in 24 hours at DeltaHacks XII, enabling hands-free, accessible learning through an infinite-canvas mind map interface.",
+			techStack: [
+				"Next.js",
+				"React Flow",
+				"MongoDB",
+				"Vercel AI SDK",
+				"Gemini 2.0 Flash",
+				"Google Embeddings",
+				"Vultr",
+				"Nginx",
+				"PM2",
+			],
+			sourceCode: "https://github.com/Abdullah73k/NeuraLearn",
+			website: null,
+			highlights: [
+				"Winner of the 'Best Use of Vultr' award at DeltaHacks XII",
+				"Replaced linear chat with an infinite-canvas mind map for improved knowledge exploration",
+				"Contributed to semantic routing using vector embeddings and cosine similarity",
+				"Deployed production infrastructure on Vultr with Nginx reverse proxy and PM2",
+			],
+		},
+		{
 			name: "Gemini Design Studio",
 			description:
 				"An AI-powered 3D room layout generator that creates interior designs from text prompts. Built in 1.5 hours at DeltaHacks Lite for 'Best use of Gemini'.",
@@ -136,53 +183,6 @@ export const resumeData = {
 				"Used Deepseek reasoning model to generate structured financial analysis and predictions",
 				"Built interactive line charts with Recharts to visualize 6-month price forecasts",
 				"Implemented comprehensive analysis covering financial health, valuation, and risk assessment",
-			],
-		},
-		{
-			name: "Property Management Platform",
-			description:
-				"A full-stack property management system designed for small to mid-sized landlords, providing centralized tracking of properties, leases, tenants, and financials.",
-			techStack: [
-				"React",
-				"TypeScript",
-				"Node.js",
-				"Express",
-				"PostgreSQL",
-				"Docker",
-				"Doppler",
-				"Better Auth",
-			],
-			sourceCode: "https://github.com/Abdullah73k",
-			website: null,
-			highlights: [
-				"Architected and deployed a full-stack web platform with mobile support (iOS & Android)",
-				"Containerized backend services with Docker and deployed on Render",
-				"Managed secrets and environment variables using Doppler",
-				"Implemented backend authentication middleware with Better Auth to enforce session-based authorization",
-			],
-		},
-		{
-			name: "NeuraLearn",
-			description:
-				"A voice-first AI learning platform built in 24 hours at DeltaHacks XII, enabling hands-free, accessible learning through an infinite-canvas mind map interface.",
-			techStack: [
-				"Next.js",
-				"React Flow",
-				"MongoDB",
-				"Vercel AI SDK",
-				"Gemini 2.0 Flash",
-				"Google Embeddings",
-				"Vultr",
-				"Nginx",
-				"PM2",
-			],
-			sourceCode: "https://github.com/Abdullah73k",
-			website: null,
-			highlights: [
-				"Winner of the 'Best Use of Vultr' award at DeltaHacks XII",
-				"Replaced linear chat with an infinite-canvas mind map for improved knowledge exploration",
-				"Contributed to semantic routing using vector embeddings and cosine similarity",
-				"Deployed production infrastructure on Vultr with Nginx reverse proxy and PM2",
 			],
 		},
 	],

@@ -102,26 +102,44 @@ export function Resume() {
         <div className="space-y-8">
           {projects.map((project, index) => (
             <article key={index}>
-              <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
+              <div className="flex flex-col gap-2 sm:flex-row sm:items-baseline sm:justify-between">
                 <h3 className="text-foreground text-sm font-medium">
                   {project.name}
                 </h3>
-                {project.sourceCode && (
-                  <Button
-                    variant="link"
-                    size="xs"
-                    render={
-                      <a
-                        href={project.sourceCode}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      />
-                    }
-                  >
-                    <HugeiconsIcon icon={LinkSquare01Icon} strokeWidth={2} data-icon="inline-start" />
-                    Source
-                  </Button>
-                )}
+                <div className="flex gap-2">
+                  {project.website && (
+                    <Button
+                      variant="link"
+                      size="xs"
+                      render={
+                        <a
+                          href={project.website}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        />
+                      }
+                    >
+                      <HugeiconsIcon icon={LinkSquare01Icon} strokeWidth={2} data-icon="inline-start" />
+                      Website
+                    </Button>
+                  )}
+                  {project.sourceCode && (
+                    <Button
+                      variant="link"
+                      size="xs"
+                      render={
+                        <a
+                          href={project.sourceCode}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        />
+                      }
+                    >
+                      <HugeiconsIcon icon={Github01Icon} strokeWidth={2} data-icon="inline-start" />
+                      Source
+                    </Button>
+                  )}
+                </div>
               </div>
               <p className="text-muted-foreground mt-1 text-xs leading-relaxed">
                 {project.description}
