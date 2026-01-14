@@ -1,3 +1,5 @@
+"use client"
+
 import { resumeData } from "@/data/resume"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -29,18 +31,18 @@ export function Resume() {
 
         {/* Contact Links */}
         <div className="mt-4 flex flex-wrap items-center gap-3">
-          <Button variant="ghost" size="sm" render={<a href={`mailto:${personal.email}`} />}>
+          <Button variant="ghost" size="sm" render={(props) => <a {...props} href={`mailto:${personal.email}`} />}>
             <HugeiconsIcon icon={MailIcon} strokeWidth={2} data-icon="inline-start" />
             {personal.email}
           </Button>
-          <Button variant="ghost" size="sm" render={<a href={`tel:${personal.phone}`} />}>
+          <Button variant="ghost" size="sm" render={(props) => <a {...props} href={`tel:${personal.phone}`} />}>
             <HugeiconsIcon icon={SmartPhone01Icon} strokeWidth={2} data-icon="inline-start" />
             {personal.phone}
           </Button>
           <Button
             variant="ghost"
             size="sm"
-            render={<a href={personal.linkedin} target="_blank" rel="noopener noreferrer" />}
+            render={(props) => <a {...props} href={personal.linkedin} target="_blank" rel="noopener noreferrer" />}
           >
             <HugeiconsIcon icon={Linkedin01Icon} strokeWidth={2} data-icon="inline-start" />
             LinkedIn
@@ -48,7 +50,7 @@ export function Resume() {
           <Button
             variant="ghost"
             size="sm"
-            render={<a href={personal.github} target="_blank" rel="noopener noreferrer" />}
+            render={(props) => <a {...props} href={personal.github} target="_blank" rel="noopener noreferrer" />}
           >
             <HugeiconsIcon icon={Github01Icon} strokeWidth={2} data-icon="inline-start" />
             GitHub
@@ -124,13 +126,14 @@ export function Resume() {
                     <Button
                       variant="link"
                       size="xs"
-                      render={
+                      render={(props) => (
                         <a
+                          {...props}
                           href={project.website}
                           target="_blank"
                           rel="noopener noreferrer"
                         />
-                      }
+                      )}
                     >
                       <HugeiconsIcon icon={LinkSquare01Icon} strokeWidth={2} data-icon="inline-start" />
                       Website
@@ -140,13 +143,14 @@ export function Resume() {
                     <Button
                       variant="link"
                       size="xs"
-                      render={
+                      render={(props) => (
                         <a
+                          {...props}
                           href={project.sourceCode}
                           target="_blank"
                           rel="noopener noreferrer"
                         />
-                      }
+                      )}
                     >
                       <HugeiconsIcon icon={Github01Icon} strokeWidth={2} data-icon="inline-start" />
                       Source
