@@ -1,0 +1,16 @@
+services:
+  portfolio:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      target: dep
+    image: portfolio
+    container_name: portfolio
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/node_modules/.bin
+      - /app/.next
+    command: ["pnpm", "run", "dev"]
