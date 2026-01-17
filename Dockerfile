@@ -3,6 +3,14 @@ FROM node:24.12.0-slim AS base
 RUN corepack enable && corepack enable npm
 
 
+
+FROM base as dev
+
+WORKDIR /app
+
+CMD [ "sh", "-c", "[ -d node_modules ] || pnpm install; pnpm run dev" ]
+
+
 FROM base AS dep
 
 WORKDIR /app

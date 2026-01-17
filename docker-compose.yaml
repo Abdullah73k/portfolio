@@ -3,11 +3,15 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
-      target: dep
+      target: dev
     image: portfolio
     container_name: portfolio
     ports:
-      - "3000:3000"
+      - "4000:3000"
     volumes:
       - .:/app
-    command: sh -c "pnpm install && pnpm run dev"
+      - node_modules:/app/node_modules
+    environment:
+      - CI=true
+volumes:
+  node_modules:
