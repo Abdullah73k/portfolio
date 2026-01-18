@@ -10,8 +10,8 @@ services:
       - "4000:3000"
     volumes:
       - .:/app
-      - node_modules:/app/node_modules
+      - node_modules-portfolio:/app/node_modules
     environment:
       - CI=true
 volumes:
-  node_modules:
+  node_modules-portfolio:

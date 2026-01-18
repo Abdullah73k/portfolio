@@ -8,7 +8,7 @@ FROM base as dev
 
 WORKDIR /app
 
-CMD [ "sh", "-c", "[ -d node_modules ] || pnpm install; pnpm run dev" ]
+CMD [ "sh", "-c", "[ -d node_modules/next/package.json ] && [ -d node_modules/.modules.yaml ] || pnpm install; pnpm run dev" ]
 
 
 FROM base AS dep
@@ -47,7 +47,7 @@ ENV HOSTNAME=0.0.0.0
 ENV NODE_ENV=production
 
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./ 
-   
+
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
 USER nextjs
