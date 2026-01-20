@@ -8,7 +8,7 @@ FROM base as dev
 
 WORKDIR /app
 
-CMD [ "sh", "-c", "[ -d node_modules/next/package.json ] && [ -d node_modules/.modules.yaml ] || pnpm install; pnpm run dev" ]
+CMD [ "sh", "-c", "[ -f node_modules/next/package.json ] && [ -f node_modules/.modules.yaml ] || pnpm install; pnpm run dev" ]
 
 
 FROM base AS dep

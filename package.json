@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "i": "docker container exec -it portfolio pnpm install",
     "lint": "eslint",
     "dev:up": "docker compose up",
     "dev:down": "docker compose down"
