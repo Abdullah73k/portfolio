@@ -58,7 +58,7 @@ export const resumeData = {
 			description:
 				"Worked on an event booking and management systems for the Abu Dhabi F1 Grand Prix.",
 			highlights: [
-				"Developed a full-stack event booking and management system for the Abu Dhabi F1 Grand Prix using TypeScript, Node, Express, React, and PostgreSQL",
+				"Developed a full-stack event booking and management system for the Abu Dhabi F1 Grand Prix",
 				"Built user and admin dashboards enabling customers to register for events while providing admins tools for event creation, distribution, and management",
 				"Implemented white-labeled event experiences, allowing sponsored partners to apply custom branding configurations within the platform",
 			],
